@@ -178,7 +178,7 @@ loader.load('assets/mhst.gltf', function(gltf) {
         }
     });
 
-    gltf.scene.scale.set(1, 1, 1);
+    gltf.scene.scale.set(0.2, 0.2, 0.2);
     gltf.scene.position.set(0, 0, 0);
 
    
