@@ -166,7 +166,7 @@ const loader = new GLTFLoader(loadingManager);
 const mixers = [];
 loader.setDRACOLoader(dLoader);
 
-loader.load('assets/no.glb', function(gltf) {
+loader.load('assets/mhst.gltf', function(gltf) {
     scene.add(gltf.scene);
 
     gltf.scene.traverse((node) => {
