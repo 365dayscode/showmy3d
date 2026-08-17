@@ -1,5 +1,3 @@
-# Christmas-2024
+# Showmy3d
 
-Three.js Christmas wish project.
-
-it's just a fun project,  3d models were made using Blender 3D.
+Three.js based 3d viewer.
