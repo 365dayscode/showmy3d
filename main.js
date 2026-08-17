@@ -166,7 +166,7 @@ const loader = new GLTFLoader(loadingManager);
 const mixers = [];
 loader.setDRACOLoader(dLoader);
 
-loader.load('assets/bol.gltf', function(gltf) {
+loader.load('assets/no.gltf', function(gltf) {
     scene.add(gltf.scene);
 
     gltf.scene.traverse((node) => {
@@ -189,7 +189,7 @@ loader.load('assets/bol.gltf', function(gltf) {
 
 
 loader.load('assets/smoke.gltf', function(gltf) {
-    scene.add(gltf.scene);
+    //scene.add(gltf.scene);
 
 
 
@@ -228,7 +228,7 @@ const snowflakeMaterial = new THREE.PointsMaterial({
 });
 
 const snowflakeSystem = new THREE.Points(snowflakeGeometry, snowflakeMaterial);
-scene.add(snowflakeSystem);
+//scene.add(snowflakeSystem);
 
 // Random Spherical Coordinates
 function randomSphericalCoordinates(radius) {
@@ -266,8 +266,8 @@ scene.add(sunlo2);
 
 
 const fogColor = new THREE.Color(0x00496f);
-scene.background = new THREE.Color(0x003255);
-scene.fog = new THREE.FogExp2(fogColor, 0.35);
+//scene.background = new THREE.Color(0x003255);
+//scene.fog = new THREE.FogExp2(fogColor, 0.35);
 
 // Position above and to the side, like the sun
 //sunlight1.castShadow = true;
