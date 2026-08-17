@@ -173,7 +173,7 @@ loader.load('assets/mhst.gltf', function(gltf) {
         if (node.isMesh && node.material && node.material.isMeshStandardMaterial) {
             node.material.roughness = 1;
             node.material.metalness = 0;
-            node.material.emissiveIntensity = 20;
+            node.material.emissiveIntensity = 2;
             node.material.needsUpdate = true;
         }
     });
@@ -267,7 +267,7 @@ sunlo2.position.set(0,-8,0);
 
 const fogColor = new THREE.Color(0x0000a42);
 //scene.background = new THREE.Color(0x003255);
-//scene.fog = new THREE.FogExp2(fogColor, 0.35);
+scene.fog = new THREE.FogExp2(fogColor, 0.35);
 
 // Position above and to the side, like the sun
 //sunlight1.castShadow = true;
@@ -348,6 +348,8 @@ function handleWindowResize(){
 }
 
 window.addEventListener('resize',handleWindowResize, false);
+
+
 
 
 
