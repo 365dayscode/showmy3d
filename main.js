@@ -351,5 +351,3 @@ window.addEventListener('resize',handleWindowResize, false);
 
 
 
-
-
