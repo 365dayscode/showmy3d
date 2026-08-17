@@ -48,9 +48,9 @@ const renderer = new THREE.WebGLRenderer({
 renderer.setSize(w,h);
 renderer.setPixelRatio(3);
 document.body.appendChild(renderer.domElement);
-const fov = 75;
+const fov = 80;
 const aspect = w / h;
-const near = 0.1;
+const near = 0.05;
 const far = 10;
 const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
 camera.position.z = 4;
@@ -178,7 +178,7 @@ loader.load('assets/mhst.gltf', function(gltf) {
         }
     });
 
-    gltf.scene.scale.set(0.2, 0.2, 0.2);
+    gltf.scene.scale.set(0.6, 0.6, 0.6);
     gltf.scene.position.set(0, 0, 0);
 
    
