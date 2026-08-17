@@ -64,7 +64,7 @@ bloomPass.strength=0.2;
 bloomPass.radius=0.000005;
 const compos = new EffectComposer(renderer);
 compos.addPass(renderScene);
-compos.addPass(bloomPass);
+//compos.addPass(bloomPass);
 let omodx = 0.02; 
 let omody = 0.02;
 let modx = 0;
@@ -171,7 +171,7 @@ loader.load('assets/mhst.gltf', function(gltf) {
 
     gltf.scene.traverse((node) => {
         if (node.isMesh && node.material && node.material.isMeshStandardMaterial) {
-            node.material.roughness = 0.8;
+            node.material.roughness = 1;
             node.material.metalness = 0;
             node.material.emissiveIntensity = 20;
             node.material.needsUpdate = true;
@@ -248,24 +248,24 @@ poin.position.set(1,-4, 3);
 //scene.add(poin);
 
 const ambientLight = new THREE.AmbientLight(0xffffff, 2); 
-scene.add(ambientLight);
+//scene.add(ambientLight);
 
 // fog ------------------------------
 const sunlo = new THREE.DirectionalLight(0x4be7fd,10, 3, 9);
 sunlo.rotation.y=0;
 sunlo.position.set(3,8,3);
-scene.add(sunlo);
+//scene.add(sunlo);
 
 const sunlo2 = new THREE.DirectionalLight(0xfaa20d,20, 3, 9);
 sunlo2.rotation.y=180;
 sunlo2.position.set(0,-8,0);
-scene.add(sunlo2);
+//scene.add(sunlo2);
 
 //bgsky
 
 
 
-const fogColor = new THREE.Color(0x00496f);
+const fogColor = new THREE.Color(0x0000a42);
 //scene.background = new THREE.Color(0x003255);
 //scene.fog = new THREE.FogExp2(fogColor, 0.35);
 
@@ -275,13 +275,13 @@ const fogColor = new THREE.Color(0x00496f);
 const rectLi = new THREE.RectAreaLight(0xfffff,0.7,30,5);
 //scene.add(rectLi);
 
-rectLi.position.set(0,-2.9,-1.25);
+//rectLi.position.set(0,-2.9,-1.25);
 
 
 
 const hei = new THREE.HemisphereLight(0xfffff, 0xfffff, 1);
 hei.position.set(0,-6,0);
-scene.add(hei);
+//scene.add(hei);
 
 fxxass.material.uniforms['resolution'].value.x = 1 / window.innerWidth;
 fxxass.material.uniforms['resolution'].value.y = 1/ window.innerHeight;
